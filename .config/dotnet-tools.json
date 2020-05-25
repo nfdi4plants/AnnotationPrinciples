@@ -13,6 +13,12 @@
       "commands": [
         "fornax"
       ]
+    },
+    "paket": {
+      "version": "5.245.2",
+      "commands": [
+        "paket"
+      ]
     }
   }
 }
