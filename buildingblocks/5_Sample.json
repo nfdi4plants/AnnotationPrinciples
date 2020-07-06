@@ -1,8 +1,8 @@
 {
-  "Name": "Source",
-  "Description": "The Source column defines the organism that is subject to your study.",
-  "DescriptionSub": "It is the first column of every study file.",
-  "BackgroudColor": "#ffffff",
-  "Color": "#000000",
-  "Image": "/images/testimg1.png"
+    "Name": "Sample",
+    "Description": "The Source column defines the organism that is subject to your study.",
+    "DescriptionSub": "It is the first column of every study file.",
+    "BackgroudColor": "#2D3E50",
+    "Color": "white",
+    "Image": "images/testimg1.png"
 }

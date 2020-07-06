@@ -1,8 +1,8 @@
 {
-  "Name": "Factor",
-  "Description": "Use factor columns to track the experimental conditions that govern your study",
-  "DescriptionSub": "Most of the time, factors are the most important building blocks for downstream computational analysis.",
-  "BackgroudColor": "#DAEEF3",
-  "Color": "#215967",
-  "Image": "/images/testimg1.png"
+    "Name": "Factor",
+    "Description": "Use factor columns to track the experimental conditions that govern your study",
+    "DescriptionSub": "Most of the time, factors are the most important building blocks for downstream computational analysis.",
+    "BackgroudColor": "#1FC2A7",
+    "Color": "white",
+    "Image": "images/testimg2.png"
 }
