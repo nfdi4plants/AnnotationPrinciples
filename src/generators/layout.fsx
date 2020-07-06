@@ -43,7 +43,7 @@ let layout (ctx : SiteContents) active bodyCnt =
       pages
       |> Seq.map (fun p ->
         let cls = if p.title = active then "navbar-item is-active" else "navbar-item"
-        a [Class cls; Href p.link] [!! p.title ])
+        a [Class cls; Href p.link; HtmlProperties.Style [ CSSProperties.Custom("color","#0BB5DD")]] [!! p.title ])
       |> Seq.toList
 
     html [] [
@@ -58,11 +58,11 @@ let layout (ctx : SiteContents) active bodyCnt =
             link [Rel "stylesheet"; Type "text/css"; Href "/style/style.css"]
         ]
         body [] [
-            nav [Class "navbar"] [
+            nav [Class "navbar"; HtmlProperties.Style [BackgroundColor "#2D3E50"; CSSProperties.Custom("color","#0BB5DD")]] [
                 div [Class "container"] [
                     div [Class "navbar-brand"] [
                         a [Class "navbar-item"; Href "/"] [
-                            img [Src "/images/bulma.png"; Alt "Logo"]
+                            img [Src "images/DataPlant.png"; Alt "Logo"]
                         ]
                         span [Class "navbar-burger burger"; Custom ("data-target", "navbarMenu")] [
                             span [] []
