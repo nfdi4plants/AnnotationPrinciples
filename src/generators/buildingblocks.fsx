@@ -20,24 +20,25 @@ let generate' (ctx : SiteContents) (_: string) =
                 Class "section "
             ] [
                 h1 [
-                    Class "title has-text-centered is-size-1"
-                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color)]
+                    Class "title has-text-centered"
+                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color); FontSize "5em"]
                 ] [
                     !!bb.Name
                 ]
                 br []
                 h3 [
-                    Class "subtitle has-text-centered is-size-2"
+                    Class "subtitle has-text-centered is-size-1"
                     HtmlProperties.Style [CSSProperties.Custom("color",bb.Color)]    
                 ] [
                     !! bb.Description
                 ]
                 h3 [
-                    Class "subtitle has-text-centered is-size-2"
+                    Class "subtitle has-text-centered is-size-1"
                     HtmlProperties.Style [CSSProperties.Custom("color",bb.Color)]    
                 ] [
                     !! bb.DescriptionSub
                 ]
+                br[]
                 div [Class "container"; HtmlProperties.Style [MaxWidth "50%"]] [
                     figure [Class "image is-2by1 is-centered"] [
                         img [Src bb.Image]
