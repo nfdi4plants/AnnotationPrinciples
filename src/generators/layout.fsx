@@ -8,28 +8,28 @@
 
 open Html
 
-let injectWebsocketCode (webpage:string) =
-    let websocketScript =
-        """
-        <script type="text/javascript">
-          var wsUri = "ws://localhost:8080/websocket";
-      function init()
-      {
-        websocket = new WebSocket(wsUri);
-        websocket.onclose = function(evt) { onClose(evt) };
-      }
-      function onClose(evt)
-      {
-        console.log('closing');
-        websocket.close();
-        document.location.reload();
-      }
-      window.addEventListener("load", init, false);
-      </script>
-        """
-    let head = "<head>"
-    let index = webpage.IndexOf head
-    webpage.Insert ( (index + head.Length + 1),websocketScript)
+//let injectWebsocketCode (webpage:string) =
+//    let websocketScript =
+//        """
+//        <script type="text/javascript">
+//          var wsUri = "ws://localhost:8080/websocket";
+//      function init()
+//      {
+//        websocket = new WebSocket(wsUri);
+//        websocket.onclose = function(evt) { onClose(evt) };
+//      }
+//      function onClose(evt)
+//      {
+//        console.log('closing');
+//        websocket.close();
+//        document.location.reload();
+//      }
+//      window.addEventListener("load", init, false);
+//      </script>
+//        """
+//    let head = "<head>"
+//    let index = webpage.IndexOf head
+//    webpage.Insert ( (index + head.Length + 1),websocketScript)
 
 let layout (ctx : SiteContents) active bodyCnt =
     let pages = ctx.TryGetValues<Pageloader.Page> () |> Option.defaultValue Seq.empty
@@ -78,10 +78,10 @@ let layout (ctx : SiteContents) active bodyCnt =
     ]
 
 let render (ctx : SiteContents) cnt =
-  let disableLiveRefresh = ctx.TryGetValue<Postloader.PostConfig> () |> Option.map (fun n -> n.disableLiveRefresh) |> Option.defaultValue false
+  //let disableLiveRefresh = ctx.TryGetValue<Postloader.PostConfig> () |> Option.map (fun n -> n.disableLiveRefresh) |> Option.defaultValue false
   cnt
   |> HtmlElement.ToString
-  |> fun n -> if disableLiveRefresh then n else injectWebsocketCode n
+  //|> fun n -> if disableLiveRefresh then n else injectWebsocketCode n
 
 let published (post: Postloader.Post) =
     post.published
