@@ -1,8 +1,8 @@
 {
-    "Name": "Parameter",
-    "Description": "The Source column defines the organism that is subject to your study.",
-    "DescriptionSub": "It is the first column of every study file.",
-    "BackgroudColor": "white",
-    "Color": "#0BB5DD",
-    "Image": "images/Parameter.svg"
+  "Name": "Parameter",
+  "Description": "Use parameters to annotate your experimental workflow.",
+  "DescriptionSub": "You can group parameters to create a protocol.",
+  "BackgroudColor": "white",
+  "Color": "#0BB5DD",
+  "Image": "images/Parameter.svg"
 }
