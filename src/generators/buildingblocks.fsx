@@ -28,13 +28,13 @@ let generate' (ctx : SiteContents) (_: string) =
                 br []
                 h3 [
                     Class "subtitle has-text-centered is-size-1"
-                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color)]    
+                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color); Margin "1% 10% 1% 10%"]    
                 ] [
                     !! bb.Description
                 ]
                 h3 [
                     Class "subtitle has-text-centered is-size-1"
-                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color)]    
+                    HtmlProperties.Style [CSSProperties.Custom("color",bb.Color); Margin "1% 10% 1% 10%"]    
                 ] [
                     !! bb.DescriptionSub
                 ]
