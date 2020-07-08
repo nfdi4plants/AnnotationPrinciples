@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       DataPLANT Data annotation best practices
@@ -63,7 +79,7 @@
       <br/>
       <div class="container" style="max-width: 50%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/testimg1.png"/>
+          <img src="images/Characteristics.svg"/>
         </figure>
       </div>
     </div>
@@ -81,7 +97,7 @@
       <br/>
       <div class="container" style="max-width: 50%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/testimg2.png"/>
+          <img src="images/Factor.svg"/>
         </figure>
       </div>
     </div>
