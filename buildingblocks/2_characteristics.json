@@ -1,6 +1,6 @@
 {
     "Name": "Characteristics",
-    "Description": "Use characteristics columns to annotate interesting properties of source organisms",
+    "Description": "Use characteristics columns to annotate interesting properties of the source material.",
     "DescriptionSub": "You can use any number of characteristics columns.",
     "BackgroudColor": "white",
     "Color": "#1FC2A7",

@@ -1,7 +1,7 @@
 {
-    "Name": "Source",
-    "Description": "The Source column defines the organism that is subject to your study.",
-    "DescriptionSub": "It is the first column of every study file.",
+    "Name": "Source Name",
+    "Description": "The Source Name column defines the source of biological material used for your experiments. The name used must be a unique identifier. It can be an organism, a sample, or both.",
+    "DescriptionSub": "Every annotation table must start with the Source Name column",
     "BackgroudColor": "#0BB5DD",
     "Color": "white",
     "Image": "images/Source.svg"

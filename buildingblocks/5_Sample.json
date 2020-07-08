@@ -1,8 +1,8 @@
 {
-    "Name": "Sample",
-    "Description": "The Source column defines the organism that is subject to your study.",
-    "DescriptionSub": "It is the first column of every study file.",
-    "BackgroudColor": "#2D3E50",
-    "Color": "white",
-    "Image": "images/testimg1.png"
+  "Name": "Sample name",
+  "Description": "The Sample Name column defines the resulting biological material of the annotated workflow. The name used must be a unique identifier.",
+  "DescriptionSub": "Samples can again be sources for further experimental workflows.",
+  "BackgroudColor": "#2D3E50",
+  "Color": "white",
+  "Image": "images/Sample.svg"
 }
