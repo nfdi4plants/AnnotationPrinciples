@@ -3,6 +3,15 @@
 open Config
 open System.IO
 
+let postPredicate (projectRoot: string, page: string) =
+    let fileName = Path.Combine(projectRoot,page)
+    let ext = Path.GetExtension page
+    if ext = ".md" then
+        let ctn = File.ReadAllText fileName
+        ctn.Contains("layout: post")
+    else
+        false
+
 let staticPredicate (projectRoot: string, page: string) =
     let ext = Path.GetExtension page
     if page.Contains "_public" ||
@@ -14,26 +23,17 @@ let staticPredicate (projectRoot: string, page: string) =
        page.Contains ".sass-cache" ||
        page.Contains ".git" ||
        page.Contains ".ionide" ||
-       page.Contains "configuration" ||
-       page.Contains "bulma-0.9.1" ||
-       page.Contains "style_src" ||
-       ext = ".fsx" ||
-       ext = ".scss"
+       ext = ".fsx"
     then
         false
     else
         true
 
-let handleSass path = 
-    printfn "%s" path
-    path
-        .Replace("_src", "")
-        .Replace("scss", "css")
-
 let config = {
     Generators = [
-        {Script = "sass.fsx"; Trigger = OnFileExt ".scss"; OutputFile = GeneratorOutput.Custom handleSass }
+        {Script = "less.fsx"; Trigger = OnFileExt ".less"; OutputFile = ChangeExtension "css" }
+        {Script = "sass.fsx"; Trigger = OnFileExt ".scss"; OutputFile = ChangeExtension "css" }
+        {Script = "buildingblocks.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
         {Script = "staticfile.fsx"; Trigger = OnFilePredicate staticPredicate; OutputFile = SameFileName }
-        {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
     ]
 }

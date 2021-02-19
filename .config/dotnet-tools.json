@@ -2,22 +2,16 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "fake-cli": {
-      "version": "5.20.0",
-      "commands": [
-        "fake"
-      ]
-    },
     "fornax": {
       "version": "0.13.1",
       "commands": [
         "fornax"
       ]
     },
-    "paket": {
-      "version": "5.245.2",
+    "excubo.webcompiler": {
+      "version": "2.6.5",
       "commands": [
-        "paket"
+        "webcompiler"
       ]
     }
   }
