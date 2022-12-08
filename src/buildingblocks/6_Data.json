@@ -1,8 +1,0 @@
-{
-    "Name": "Data",
-    "Description": "The Data column describes data files that results from your experiments. Additionally to the type of data, the annotated files must have a unique name.",
-    "DescriptionSub": "Data files can be sources for computational workflows.",
-    "BackgroudColor": "white",
-    "Color": "#2D3E50",
-    "Image": "images/Data.svg"
-}

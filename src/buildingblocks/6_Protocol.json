@@ -1,0 +1,8 @@
+{
+    "Name": "Protocol Columns",
+    "Description": "Protocol columns extend control for protocol parsing. Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.",
+    "DescriptionSub": "The number of columns for each subtype is limited to one per table.",
+    "BackgroudColor": "white",
+    "Color": "#2D3E50",
+    "Image": "images/Protocol.svg"
+}

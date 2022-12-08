@@ -1,0 +1,8 @@
+{
+    "Name": "Output Columns",
+    "Description": "Output columns allow to specify the exact output for your process. Per table only one output column is allowed, which can either be a Sample Name, a Raw Data File or a Derived Data File. Data files can be sources for computational workflows.",
+    "DescriptionSub": "The value of this column must be a unique identifier.",
+    "BackgroudColor": "#2D3E50",
+    "Color": "white",
+    "Image": "images/Output.svg"
+}

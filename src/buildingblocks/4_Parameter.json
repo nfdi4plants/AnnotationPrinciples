@@ -1,7 +1,7 @@
 {
   "Name": "Parameter",
-  "Description": "Use parameters to annotate your experimental workflow.",
-  "DescriptionSub": "You can group parameters to create a protocol.",
+  "Description": "Parameter columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer used for your assay. Multiple Parameter columns form a protocol.",
+  "DescriptionSub": "You can use any number of Parameter columns.",
   "BackgroudColor": "white",
   "Color": "#0BB5DD",
   "Image": "images/Parameter.svg"

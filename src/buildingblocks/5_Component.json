@@ -1,0 +1,8 @@
+{
+  "Name": "Component",
+  "Description": "Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.",
+  "DescriptionSub": "You can use any number of Component columns.",
+  "BackgroudColor": "#0BB5DD",
+  "Color": "white",
+  "Image": "images/Component.svg"
+}
