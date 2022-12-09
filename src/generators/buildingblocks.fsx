@@ -39,7 +39,7 @@ let generate' (ctx : SiteContents) (_: string) =
                     !! bb.DescriptionSub
                 ]
                 br[]
-                div [Class "container"; HtmlProperties.Style [MaxWidth "50%"]] [
+                div [Class "container"; HtmlProperties.Style [MaxWidth "65%"]] [
                     figure [Class "image is-2by1 is-centered"] [
                         img [Src bb.Image]
                     ]
