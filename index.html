@@ -37,15 +37,15 @@
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        The Source Name column defines the source of biological material used for your experiments. The name used must be a unique identifier. It can be an organism, a sample, or both.
+        Every annotation table must start with the Source Name column, which defines the input of your table. This input value must be a unique identifier for an organism or a sample.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        Every annotation table must start with the Source Name column
+        The number of Source Name columns per table is limited to one.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Source.svg"/>
+          <img src="images/Source.png"/>
         </figure>
       </div>
     </div>
@@ -55,15 +55,15 @@
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #1FC2A7; margin: 1% 10% 1% 10%;">
-        Use characteristics columns to annotate interesting properties of the source material.
+        Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #1FC2A7; margin: 1% 10% 1% 10%;">
-        You can use any number of characteristics columns.
+        You can use any number of Characteristic columns.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Characteristics.svg"/>
+          <img src="images/Characteristics.png"/>
         </figure>
       </div>
     </div>
@@ -73,15 +73,15 @@
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        Use factor columns to track the experimental conditions that govern your study
+        Use Factor columns to describe independent variables that determine the specific output of your experiment when process and analysis were identical.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        Most of the time, factors are the most important building blocks for downstream computational analysis.
+        Most of the time, Factors are the most important building blocks for downstream computational analysis.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Factor.svg"/>
+          <img src="images/Factor.png"/>
         </figure>
       </div>
     </div>
@@ -91,51 +91,69 @@
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #0BB5DD; margin: 1% 10% 1% 10%;">
-        Use parameters to annotate your experimental workflow.
+        Parameter columns describe steps in your experimental workflow, e.g., the temperature or extraction buffer used for your assay. Multiple Parameter columns form a protocol.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #0BB5DD; margin: 1% 10% 1% 10%;">
-        You can group parameters to create a protocol.
+        You can use any number of Parameter columns.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Parameter.svg"/>
+          <img src="images/Parameter.png"/>
         </figure>
       </div>
     </div>
-    <div color="white" style="background-color: #2D3E50;" class="section ">
+    <div color="white" style="background-color: #0BB5DD;" class="section ">
       <h1 class="title has-text-centered" style="color: white; font-size: 5em;">
-        Sample name
+        Component
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        The Sample Name column defines the resulting biological material of the annotated workflow. The name used must be a unique identifier.
+        Use these columns to list anything physical of a protocol that can be consumed, e.g. instrument names, software names, or reagents names.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
-        Samples can again be sources for further experimental workflows.
+        You can use any number of Component columns.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Sample.svg"/>
+          <img src="images/Component.png"/>
         </figure>
       </div>
     </div>
     <div color="#2D3E50" style="background-color: white;" class="section ">
       <h1 class="title has-text-centered" style="color: #2D3E50; font-size: 5em;">
-        Data
+        Protocol Columns
       </h1>
       <br/>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #2D3E50; margin: 1% 10% 1% 10%;">
-        The Data column describes data files that results from your experiments. Additionally to the type of data, the annotated files must have a unique name.
+        Use Protocol REF columns to reference the protocol used in this table, i.e., the name of the protocol. Protocol Type columns define the type according to your preferred public repository, e.g., a growth protocol.
       </h3>
       <h3 class="subtitle has-text-centered is-size-1" style="color: #2D3E50; margin: 1% 10% 1% 10%;">
-        Data files can be sources for computational workflows.
+        The number of columns for each subtype is limited to one per table.
       </h3>
       <br/>
-      <div class="container" style="max-width: 50%;">
+      <div class="container" style="max-width: 65%;">
         <figure class="image is-2by1 is-centered">
-          <img src="images/Data.svg"/>
+          <img src="images/Protocol.png"/>
+        </figure>
+      </div>
+    </div>
+    <div color="white" style="background-color: #2D3E50;" class="section ">
+      <h1 class="title has-text-centered" style="color: white; font-size: 5em;">
+        Output Columns
+      </h1>
+      <br/>
+      <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
+        Per table only one output column is allowed, which can either be a Sample Name, a Raw Data File or a Derived Data File. Data files can be sources for computational workflows.
+      </h3>
+      <h3 class="subtitle has-text-centered is-size-1" style="color: white; margin: 1% 10% 1% 10%;">
+        The value of this column must be a unique identifier.
+      </h3>
+      <br/>
+      <div class="container" style="max-width: 65%;">
+        <figure class="image is-2by1 is-centered">
+          <img src="images/Output.png"/>
         </figure>
       </div>
     </div>

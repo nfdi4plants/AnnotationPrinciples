@@ -1,8 +1,8 @@
 {
     "Name": "Characteristics",
-    "Description": "Use characteristics columns to annotate interesting properties of the source material.",
-    "DescriptionSub": "You can use any number of characteristics columns.",
+    "Description": "Characteristic columns describe inherent properties of the source material, e.g., a certain strain or ecotype, but also the temperature an organism was exposed to.",
+    "DescriptionSub": "You can use any number of Characteristic columns.",
     "BackgroudColor": "white",
     "Color": "#1FC2A7",
-    "Image": "images/Characteristics.svg"
+    "Image": "images/Characteristics.png"
 }
